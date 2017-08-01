@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caesarDecrypt"
+        android:layout_marginTop="47dp"
+        android:id="@+id/output_caesar"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/caesarDecrypt"
+        android:layout_alignEnd="@+id/caesarDecrypt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/key_caesar"
+        android:layout_below="@+id/textView5"
+        android:layout_alignEnd="@+id/caesarDecrypt" />
+
+    <Button
+        android:text="Decryption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/caesarDecrypt"
+        android:background="@drawable/buttonchange"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginStart="18dp" />
+
+    <Button
+        android:text="Encryption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/caesarEncrypt"
+        android:layout_marginLeft="21dp"
+        android:background="@drawable/buttonchange"
+        android:layout_above="@+id/output_caesar"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:text="Cipher/Plain Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="79dp"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+
+        android:ems="10"
+        android:id="@+id/message_caesar"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/key_caesar"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:text="Key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/message_caesar"
+        android:layout_alignStart="@+id/textView4" />
+
+</RelativeLayout>

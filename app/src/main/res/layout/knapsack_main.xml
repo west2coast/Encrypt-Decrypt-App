@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="5"
+        android:id="@+id/knap_seq"
+        android:layout_alignBaseline="@+id/sequence"
+        android:layout_alignBottom="@+id/sequence"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Sequence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="63dp"
+        android:layout_y="89dp"
+        android:id="@+id/sequence"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/knap_m"
+        android:layout_toStartOf="@+id/knap_m" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="5"
+        android:id="@+id/knap_m"
+        android:layout_below="@+id/knap_seq"
+        android:layout_alignLeft="@+id/knap_seq"
+        android:layout_alignStart="@+id/knap_seq"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:text="m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="63dp"
+        android:layout_y="89dp"
+        android:id="@+id/mVal"
+        android:layout_alignBaseline="@+id/knap_m"
+        android:layout_alignBottom="@+id/knap_m"
+        android:layout_alignLeft="@+id/sequence"
+        android:layout_alignStart="@+id/sequence" />
+
+    <TextView
+        android:text="n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/nVal"
+        android:layout_below="@+id/knap_m"
+        android:layout_alignLeft="@+id/mVal"
+        android:layout_alignStart="@+id/mVal" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:layout_below="@+id/knap_m"
+        android:layout_alignLeft="@+id/knap_m"
+        android:layout_alignStart="@+id/knap_m"
+        android:layout_marginTop="20dp"
+        android:id="@+id/knap_n" />
+
+    <TextView
+        android:text="Knapsack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_x="142dp"
+        android:layout_y="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/knap_seq"
+        android:layout_alignStart="@+id/knap_seq"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:text="Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/knap_n"
+        android:layout_alignLeft="@+id/nVal"
+        android:layout_alignStart="@+id/nVal"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/knap_message"
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignLeft="@+id/knap_n"
+        android:layout_alignStart="@+id/knap_n" />
+
+    <Button
+        android:text="Encrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/knap_message"
+        android:layout_toRightOf="@+id/mVal"
+        android:layout_toEndOf="@+id/mVal"
+        android:layout_marginTop="16dp"
+        android:id="@+id/knap_encrypt"
+        android:background="@drawable/buttonchange"/>
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/knap_encrypt"
+        android:layout_alignLeft="@+id/knap_encrypt"
+        android:layout_alignStart="@+id/knap_encrypt"
+        android:layout_marginTop="30dp"
+        android:id="@+id/knap_output"
+        android:layout_alignRight="@+id/knap_decrypt"
+        android:layout_alignEnd="@+id/knap_decrypt"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:text="Decrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/knap_decrypt"
+        android:layout_above="@+id/knap_output"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:background="@drawable/buttonchange"/>
+
+</RelativeLayout>

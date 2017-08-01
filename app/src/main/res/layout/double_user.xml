@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Double Transposition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+
+    <TextView
+        android:text="Columns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_alignBaseline="@+id/doubleU_col1"
+        android:layout_alignBottom="@+id/doubleU_col1"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="4"
+        android:layout_alignTop="@+id/doubleU_col1"
+        android:layout_alignRight="@+id/doubleU_row2"
+        android:layout_alignEnd="@+id/doubleU_row2"
+        android:id="@+id/doubleU_col2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="4"
+        android:id="@+id/doubleU_row2"
+        android:layout_alignBaseline="@+id/doubleU_row1"
+        android:layout_alignBottom="@+id/doubleU_row1"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doubleU_output"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/doubleU_rows"
+        android:layout_alignLeft="@+id/doubleU_rows"
+        android:layout_alignStart="@+id/doubleU_rows" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="4"
+        android:layout_marginTop="15dp"
+        android:id="@+id/doubleU_col1"
+        android:layout_below="@+id/doubleU_row1"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="4"
+        android:id="@+id/doubleU_row1"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignStart="@+id/doubleU_col1" />
+
+    <Button
+        android:text="Rows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/doubleU_rows"
+        android:background="@drawable/buttonchange"
+        android:layout_below="@+id/doubleU_col1"
+        android:layout_alignEnd="@+id/doubleU_col1" />
+
+    <Button
+        android:text="Columns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doubleU_columns"
+        android:background="@drawable/buttonchange"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBaseline="@+id/doubleU_rows"
+        android:layout_alignBottom="@+id/doubleU_rows"
+        android:layout_toEndOf="@+id/doubleU_rows" />
+
+</RelativeLayout>

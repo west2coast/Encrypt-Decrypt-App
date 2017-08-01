@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_block"
+            android:title="Block Cipher" />
+        <item
+            android:id="@+id/nav_caesar"
+            android:title="Caesar Cipher" />
+        <item
+            android:id="@+id/nav_transposition"
+            android:title="Double Transposition" />
+        <item
+            android:id="@+id/nav_knapsack"
+            android:title="Knapsack" />
+
+    </group>
+
+
+</menu>
